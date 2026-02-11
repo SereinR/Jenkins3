@@ -9,11 +9,13 @@ pipeline {
     stage('Build Java') {
       steps {
          sh 'javac Hello.java'
+         sh 'javac Welcome.java'
       }
     }
     stage('Run') {
       steps {
          sh 'java Hello'
+         sh 'java Welcome'
       }
     }
   }
